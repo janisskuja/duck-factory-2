@@ -1,0 +1,155 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://ConveierPoint.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sounds/music.wav" type="AudioStream" id=3]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=4]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RedBelt" type="Node2D" parent="."]
+position = Vector2( 80, 0 )
+
+[node name="ConveierPoint" parent="RedBelt" instance=ExtResource( 2 )]
+
+[node name="ConveierPoint6" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 80 )
+
+[node name="ConveierPoint9" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 160 )
+
+[node name="ConveierPoint12" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 240 )
+
+[node name="ConveierPoint15" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 320 )
+
+[node name="ConveierPoint18" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 400 )
+
+[node name="ConveierPoint21" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 480 )
+
+[node name="ConveierPoint24" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 560 )
+
+[node name="ConveierPoint27" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 640 )
+
+[node name="ConveierPoint30" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 720 )
+
+[node name="ConveierPoint33" parent="RedBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 800 )
+
+[node name="BlueBelt" type="Node2D" parent="."]
+position = Vector2( 240, 0 )
+
+[node name="ConveierPoint3" parent="BlueBelt" instance=ExtResource( 2 )]
+color = "#00A6FF"
+
+[node name="ConveierPoint5" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 80 )
+color = "#00A6FF"
+
+[node name="ConveierPoint8" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 160 )
+color = "#00A6FF"
+
+[node name="ConveierPoint11" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 240 )
+color = "#00A6FF"
+
+[node name="ConveierPoint14" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 320 )
+color = "#00A6FF"
+
+[node name="ConveierPoint17" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 400 )
+color = "#00A6FF"
+
+[node name="ConveierPoint20" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 480 )
+color = "#00A6FF"
+
+[node name="ConveierPoint23" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 560 )
+color = "#00A6FF"
+
+[node name="ConveierPoint26" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 640 )
+color = "#00A6FF"
+
+[node name="ConveierPoint29" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 720 )
+color = "#00A6FF"
+
+[node name="ConveierPoint32" parent="BlueBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 800 )
+color = "#00A6FF"
+
+[node name="GreenBelt" type="Node2D" parent="."]
+position = Vector2( 400, 0 )
+
+[node name="ConveierPoint2" parent="GreenBelt" instance=ExtResource( 2 )]
+color = "#33FF36"
+
+[node name="ConveierPoint4" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 80 )
+color = "#33FF36"
+
+[node name="ConveierPoint7" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 160 )
+color = "#33FF36"
+
+[node name="ConveierPoint10" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 240 )
+color = "#33FF36"
+
+[node name="ConveierPoint13" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 320 )
+color = "#33FF36"
+
+[node name="ConveierPoint16" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 400 )
+color = "#33FF36"
+
+[node name="ConveierPoint19" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 480 )
+color = "#33FF36"
+
+[node name="ConveierPoint22" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 560 )
+color = "#33FF36"
+
+[node name="ConveierPoint25" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 640 )
+color = "#33FF36"
+
+[node name="ConveierPoint28" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 720 )
+color = "#33FF36"
+
+[node name="ConveierPoint31" parent="GreenBelt" instance=ExtResource( 2 )]
+position = Vector2( 0, 800 )
+color = "#33FF36"
+
+[node name="Ducks" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource( 4 )]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
