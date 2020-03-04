@@ -4,7 +4,7 @@ It's made in about 4h, and it's a submission to trijam.itch.io
 Made in Godot Engine.
 
 # Licenses
-Everything *except Font and Sounds* are under "unlicense" - so feel free to use it as you please, but I'd appriciate a shout-out if you do!
+Everything *except Font, Godot Icon and Sounds* are under "unlicense" - so feel free to use it as you please, but I'd appriciate a shout-out if you do!
 Fonts have appropriate license next to them - they are google fonts!
 This repository doesn't include "Sounds" directory, since they're under other licenses, but I'm sure you can figure out how to add your own music and duck sounds in Godot project
 
